@@ -11,8 +11,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from get_data import read_params
 import argparse
+import yaml
 import joblib
 import json
+
 
 
 def eval_metrics(actual, pred):
@@ -87,7 +89,11 @@ def train_and_evaluate(config_path):
 
 
 if __name__=="__main__":
+    print("enter the main")
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
     parsed_args = args.parse_args()
     train_and_evaluate(config_path=parsed_args.config)
+
+
+    
