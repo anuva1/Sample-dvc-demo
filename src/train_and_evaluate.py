@@ -58,6 +58,7 @@ def train_and_evaluate(config_path):
     print("  R2: %s" % r2)
 
 #####################################################
+    
     scores_file = config["reports"]["scores"]
     params_file = config["reports"]["params"]
 
